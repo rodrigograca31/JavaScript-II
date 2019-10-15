@@ -70,3 +70,9 @@ console.log(mycounterFactory.increment());
 console.log(mycounterFactory.increment());
 console.log(mycounterFactory.increment());
 console.log(mycounterFactory.decrement());
+
+
+
+(function name(params) {
+	console.log("abc");
+})();
