@@ -4,6 +4,19 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+const myClosure = () => {
+	let years = 0;
+	return function () {
+		years++;
+		return "You got older! now you are: " + years;
+	}
+}
+const rod = myClosure();
+console.log(rod());
+console.log(rod());
+console.log(rod());
+console.log(rod());
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
